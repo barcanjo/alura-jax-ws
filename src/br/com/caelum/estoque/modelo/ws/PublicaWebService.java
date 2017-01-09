@@ -8,6 +8,8 @@ public class PublicaWebService {
 		EstoqueWS service = new EstoqueWS();
 		String url = "http://localhost:8080/estoquews";
 		
+		System.out.println("Rodando serviço " + url + "?wsdl");
+		
 		Endpoint.publish(url, service);
 	}
 
